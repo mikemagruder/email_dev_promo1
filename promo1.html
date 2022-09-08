@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harley Davidson</title>
+    <style type="text/css">
+      /* FONTS */
+      @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400i&amp;display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500&amp;display=swap);
+      [style*="Roboto"] {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif !important
+      }
+      [style*="PT Serif"] {
+        font-family: 'PT Serif', Georgia, serif !important
+      }
+      [style*="Barlow Condensed"] {
+        font-family: 'Barlow Condensed', Helvetica, Arial, sans-serif !important
+      }
+      body {
+        height: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      div,
+      button {
+        display: block !important;
+      }
+      table,
+      td {
+        border-collapse: collapse !important;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+      a {
+        color: inherit;
+        outline: none;
+        text-decoration: none;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      * {
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+      }
+      .ReadMsgBody,
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      .gmail {
+        display: none !important;
+        width: 0 !important;
+      }
+      a.button-text:hover {
+        color: #333333 !important;
+      }
+    </style>
+    <style type="text/css">
+      /* RESPONSIVE */
+      @media only screen and (max-width: 480px),
+      only screen and (max-device-width: 480px) {
+        u+.body .full-wrap {
+          width: 100% !important;
+          width: 100vw !important;
+        }
+      }
+      @media only screen and (max-width: 615px),
+      only screen and (max-device-width: 615px) {
+        .hidden {
+          display: none !important;
+          width: 0 !important;
+        }
+        .widthMobile {
+          width: 100% !important;
+        }
+        .widthFull {
+          width: 100% !important;
+        }
+        .widthHalf {
+          width: 50% !important;
+          padding-bottom: 10px !important;
+        }
+        .photo {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .photo-padding {
+          width: 90% !important;
+          height: auto !important;
+        }
+        .logo {
+          width: 70% !important;
+          height: auto !important;
+        }
+      }
+    </style>
+    <style type="text/css">
+      /* IMAGE EFFECTS */
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        /* Hide Fallback content first */
+        [class].fallback * {
+          display: none;
+        }
+        [class].carousel {
+          display: block !important;
+          max-height: none !important;
+          position: relative;
+        }
+        /* Selective blocking for clients. - Samsung (#MessageViewBody) - no absolute positioning - Comcast/Zimbra (body.MsgBody) - inconsistent CSS support */
+        #MessageViewBody .fallback,
+        body.MsgBody .fallback {
+          display: block;
+        }
+        #MessageViewBody .carousel,
+        body.MsgBody .carousel {
+          display: none !important;
+        }
+        .carousel a {
+          width: 100%;
+          display: block;
+          overflow: hidden;
+        }
+        .carousel img {
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+        .carousel.responsive {
+          width: 100% !important;
+        }
+        .carousel.responsive .car-cont {
+          width: 100% !important;
+          height: auto !important;
+        }
+        /* Fade  */
+        .carousel.fade a {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          opacity: 0;
+          -webkit-animation: car-anim 15s linear infinite;
+        }
+        .carousel.fade a:nth-child(1) {
+          position: relative;
+          -webkit-animation-delay: -16s;
+        }
+        .carousel.fade a:nth-child(2) {
+          -webkit-animation-delay: -13s;
+        }
+        .carousel.fade a:nth-child(3) {
+          -webkit-animation-delay: -10s;
+        }
+        .carousel.fade a:nth-child(4) {
+          -webkit-animation-delay: -7s;
+        }
+        .carousel.fade a:nth-child(5) {
+          -webkit-animation-delay: -4s;
+        }
+        @-webkit-keyframes car-anim {
+          /* start fade in */
+          0% {
+            z-index: 2;
+            opacity: 0;
+          }
+          /* end fade in */
+          5% {
+            opacity: 1;
+          }
+          /* start fade out */
+          20% {
+            z-index: 2;
+          }
+          20.1% {
+            z-index: 1;
+          }
+          /* end fade out */
+          28% {
+            opacity: 1;
+          }
+          /* drop z-index to 1 */
+          28.1% {
+            opacity: 0;
+          }
+          100% {
+            z-index: 1;
+            opacity: 0;
+          }
+        }
+      }
+    </style>
+
+    <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  </head>
+  <body bgcolor="#FFFFFF" class="body" style="margin:0; padding:0; width:100% !important; background-color:#ffffff;">
+
+    <!-- easy editor -->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" ee-template-version="8.6" style="table-layout: auto;">
+      <tbody>
+        <tr>
+          <td style="font-size:0; line-height:0; display:none !important;">
+
+            <!-- PREHEADER -->
+            <div style="display:none !important;">
+              Find inspiration on the road.
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div align="center" style="background-color:#ffffff;" bgcolor="#ffffff">
+      <table border="0" cellpadding="0" cellspacing="0" class="full-wrap widthMobile" role="presentation" style="width:500px;table-layout: auto;" width="500">
+        <tbody>
+          <tr>
+            <td align="center" style="padding-top: 20px;padding-right: 0;padding-bottom: 0;padding-left: 0;" valign="top">
+
+              <!-- LOGO -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:14px; color:#3a3a3a; padding-top: 0;padding-right: 0;padding-bottom: 20px;padding-left: 0;" valign="top">
+                      <a href="https://www.example.com" style="color:#3182c1; text-decoration:underline;" target="_blank"><img alt="Harley Davidson" border="0" class="logo" src="https://i.ibb.co/GMzcQ4g/hd-logo.jpg" style="display:block;" width="320"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- HERO IMAGE 1 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:14px; color:#3a3a3a; padding-top: 0;padding-right: 0;padding-bottom: 20px;padding-left: 0;" valign="top">
+
+                      <!-- animated carousel -->
+
+                      <!--[if !mso]><!== -->
+                      <div class="carousel fade responsive" style="overflow:hidden;display:none;max-height:0px;">
+                        <div class="car-cont" style="position:relative;width:620px;">
+                            <a target="_blank" href="https://www.example.com">
+                                <img src="https://i.ibb.co/8KR45yk/hd-image1.jpg" border="0"></a> 
+                            <a target="_blank" href="https://www.example.com">
+                                <img src="https://i.ibb.co/pKmSvnr/hd-image2.jpg" border="0"></a>
+                            <a target="_blank" href="https://www.example.com">
+                                <img src="https://i.ibb.co/7jV0mzy/hd-image3.jpg" border="0"></a>
+                            <a target="_blank" href="https://www.example.com">
+                                <img src="https://i.ibb.co/ZSW2sf8/hd-image4.jpg" border="0"></a>
+                            <a target="_blank" href="https://www.example.com">
+                                <img src="https://i.ibb.co/MGQ12Lv/hd-image5.jpg" border="0"></a>
+                        </div>
+                      </div>
+
+                      <!--<![endif]-->
+
+                      <!-- fallback image -->
+                      <div class="fallback">
+                        <a target="_blank" href="https://www.example.com">
+                            <img border="0" src="https://i.ibb.co/r5wXpsG/hd-image1.jpg" style="display:block;" width="620" alt="Harley Davidson"></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- HEADING 1 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Georgia, serif, 'PT Serif'; font-size:36px; mso-line-height-rule:exactly; line-height:40px; color:#3a3a3a; padding-top: 0;padding-right: 5px;padding-bottom: 20px;padding-left: 5px; max-width: 460px" valign="top"> Find inspiration <br>
+                      <em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on the road. </em>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- PARAGRAPH 1 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:16px; mso-line-height-rule:exactly; color:#3a3a3a; padding-top: 0;padding-right: 15px;padding-bottom: 20px;padding-left: 15px;" valign="top">
+                      <p style="color: #333333; font-size: 16px; line-height:22px;font-weight: 300; max-width: 460px">An instrument of expression, a machine born from an icon of yesterday evolved for the riders of today. 
+                        <!-- Learn how Harley-Davidson<sup style="font-size: 0.5em; line-height: 0; vertical-align: 1em;">®</sup> helped shape their&nbsp;sound. -->
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- CTA 1 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding-top: 0;padding-right: 0;padding-bottom: 20px;padding-left: 0;" valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate !important;table-layout: auto;">
+                        <tbody>
+                          <tr>
+                            <td align="center" bgcolor="#FFFFFF" height="22" style="height:22px; font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:17px; mso-line-height-rule:exactly; line-height:22px; color:#ffffff; padding-top: 8px;padding-right: 13px;padding-bottom: 8px;padding-left: 13px; border-top:1px solid #ff6600;border-right:1px solid #ff6600;border-bottom:1px solid #ff6600;border-left:1px solid #ff6600; border-radius:0;" valign="middle">
+                              <a class="button-text" href="https://www.example.com" style="color:#ff6600; text-decoration:none; display:block; padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;" target="_blank">GO ON THE ROAD</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- SPACE -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:16px; mso-line-height-rule:exactly; color:#3a3a3a; padding-top: 0;padding-right: 5px;padding-bottom: 5px;padding-left: 5px;" valign="top">
+                      <p style="color: #333333; font-size: 16px; line-height:20px;">&nbsp;</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- HERO IMAGE 2 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:14px; color:#3a3a3a; padding-top: 0;padding-right: 0;padding-bottom: 20px;padding-left: 0;" valign="top">
+                      <a href="https://www.example.com" style="color:#3182c1; text-decoration:underline;" target="_blank"><img alt="Harley Davidson" border="0" class="photo-padding" src="https://i.ibb.co/r5wXpsG/hd-image1.jpg" style="display:block;" width="460"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- HEADING 2 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:22px; mso-line-height-rule:exactly; color:#ff6600; padding-top: 0;padding-right: 5px;padding-bottom: 5px;padding-left: 5px; letter-spacing: 1px; font-weight: 500; max-width: 460px" valign="top">CREATE A TRUE ORIGINAL.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- PARAGRAPH 2 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:16px; mso-line-height-rule:exactly; color:#3a3a3a; padding-top: 0;padding-right: 15px;padding-bottom: 20px;padding-left: 15px;" valign="top">
+                      <p style="color: #333333; font-size: 16px; line-height:22px;font-weight: 300; max-width: 460px">
+                        Anything is possible with Harley<sup style="font-size: 0.5em; line-height: 0; vertical-align: 1em;">®</sup> customization. The only limit is your<span>&nbsp;</span>imagination.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- CTA 2 -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding-top: 0;padding-right: 0;padding-bottom: 20px;padding-left: 0;" valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate !important;table-layout: auto;">
+                        <tbody>
+                          <tr>
+                            <td align="center" bgcolor="#FFFFFF" height="22" style="height:22px; font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:17px; mso-line-height-rule:exactly; line-height:22px; color:#ffffff; padding-top: 8px;padding-right: 13px;padding-bottom: 8px;padding-left: 13px; border-top:1px solid #ff6600;border-right:1px solid #ff6600;border-bottom:1px solid #ff6600;border-left:1px solid #ff6600; border-radius:0;" valign="middle">
+                              <a class="button-text" href="https://www.example.com" style="color:#ff6600; text-decoration:none; display:block; padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;" target="_blank">CREATE A CUSTOM BIKE</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- SPACE -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:16px; mso-line-height-rule:exactly; color:#3a3a3a; padding-top: 0;padding-right: 5px;padding-bottom: 5px;padding-left: 5px;" valign="top">
+                      <p style="color: #333333; font-size: 16px; line-height:20px;">&nbsp;</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- FOOTER -->
+      <table border="0" cellpadding="0" cellspacing="0" class="full-wrap widthMobile" role="presentation" style="background-color: rgb(242, 240, 239);table-layout: auto;" width="100%" bgcolor="#f2f0ef">
+        <tbody>
+          <tr>
+            <td align="center" valign="top">
+
+              <!-- FOOTER NAV 4 COLUMN -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="table-layout: auto;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:14px; mso-line-height-rule:exactly; color:#3a3a3a; margin:0 20px 5px 20px;" valign="top">
+                      <p style="color: #7E7E7E; font-size: 9px">&nbsp;
+
+                        <!--[if mso]><br> &nbsp; <br><![endif]-->
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding-top: 0;padding-right: 10px;padding-bottom: 0;padding-left: 10px;" valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width:560px;table-layout: auto;" width="560">
+                        <tbody>
+                          <tr>
+                            <td align="left" valign="top">
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="widthHalf" role="presentation" style="width:140px;table-layout: auto;" width="140">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:14px; mso-line-height-rule:exactly; line-height:18px; color:#3a3a3a; padding-top: 0;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;" valign="top">
+                                      <a target="_blank" href="https://www.example.com" style="border-bottom: 2px solid #f1692b; color: #7E7E7E">BIKES</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!--[if mso]></td> <td align="left" valign="top"><![endif]-->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="widthHalf" role="presentation" style="width:140px;table-layout: auto;" width="140">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:14px; mso-line-height-rule:exactly; line-height:18px; color:#3a3a3a; padding-top: 0;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;" valign="top">
+                                      <a target="_blank" href="https://www.example.com" style="border-bottom: 2px solid #f1692b; color: #7E7E7E">TEST RIDE</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!--[if mso]></td> <td align="left" valign="top"><![endif]-->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="widthHalf" role="presentation" style="width:140px;table-layout: auto;" width="140">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:14px; mso-line-height-rule:exactly; line-height:18px; color:#3a3a3a; padding-top: 0;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;" valign="top">
+                                      <a target="_blank" href="https://www.example.com" style="border-bottom: 2px solid #f1692b; color: #7E7E7E">DEALERS</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!--[if mso]></td> <td align="left" valign="top"><![endif]-->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="widthHalf" role="presentation" style="width:140px;table-layout: auto;" width="140">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; font-size:14px; mso-line-height-rule:exactly; line-height:18px; color:#3a3a3a; padding-top: 0;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;" valign="top">
+                                      <a target="_blank" href="https://www.example.com" style="border-bottom: 2px solid #f1692b; color: #7E7E7E">BROCHURE</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- SOCIAL and LEGAL -->
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 500px; table-layout: auto;" width="100%">
+
+                <!-- SOCIAL -->
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Barlow Condensed'; mso-line-height-rule:exactly; color:#3a3a3a; padding-top: 0;padding-right: 20px;padding-bottom: 0;padding-left: 20px;" valign="top">
+
+                      <!--[if mso]><p style="margin: 5px; line-height: 9px"> <br> </p><![endif]-->
+                      <p style="margin: 5px; line-height: 40px; font-size:16px"><span style="vertical-align: 20%; color: #333333; font-weight: 500">FOR MORE INSPIRATION</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> <a target="_blank" href="https://www.example.com" style="color: #eeeeee; text-decoration: none; border-top: 0px;border-right: 0px;border-bottom: 0px;border-left: 0px;"><img alt="Instagram" height="30" src="https://i.ibb.co/LZWyHBy/icon-ig.png" style="border-top: 0;border-right: 0;border-bottom: 0;border-left: 0" width="30"></a> <span>&nbsp;&nbsp;</span> <a target="_blank" href="https://www.example.com" style="color: #eeeeee; text-decoration: none; border-top: 0px;border-right: 0px;border-bottom: 0px;border-left: 0px;"><img alt="Facebook" height="30" src="https://i.ibb.co/8P3HSqv/icon-fb.webp" style="border-top: 0;border-right: 0;border-bottom: 0;border-left: 0;" width="30"></a></p>
+                    </td>
+                  </tr>
+
+                  <!-- LEGAL -->
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:14px; mso-line-height-rule:exactly; line-height:18px; color:#3a3a3a; margin:0 20px 5px 20px;" valign="top">
+                      <p style="color: #7E7E7E; font-size: 12px; padding-top: 5px;padding-right: 15px;padding-bottom: 5px;padding-left: 15px;">
+
+                        <!--[if mso]><br><![endif]-->
+                        This email was sent to you by Harley<span>‑</span>Davidson<sup style="vertical-align:top">®</sup><span>&nbsp;</span>2022<br>
+                        <a href="https://www.example.com" style="color: #7E7E7E; text-decoration: none; font-family: Helvetica, Arial, sans-serif, 'Roboto';" target="_blank">View online</a> | <a href="https://www.example.com" style="color: #7E7E7E; text-decoration: none; font-family: Helvetica, Arial, sans-serif, 'Roboto';" target="_blank">Privacy Policy</a> | <a href="https://www.example.com" style="color: #7E7E7E; text-decoration: none; font-family: Helvetica, Arial, sans-serif, 'Roboto';" target="_blank">Unsubscribe</a><br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica, Arial, sans-serif, 'Roboto'; font-size:14px; mso-line-height-rule:exactly; line-height:18px; color:#3a3a3a; margin:0 5px 20px 20px;" valign="top">
+                      <p style="color: #7E7E7E; font-size: 12px; padding-top: 5px;padding-right: 15px;padding-bottom: 5px;padding-left: 15px;">© H-D 2001-2022 Harley<sup>®</sup>, Harley‑Davidson<sup>®</sup> and the Bar &amp; Shield logo are among the trademarks of H‑D&nbsp;U.S.A.<span>&nbsp;</span>LLC</p><br>
+                      <br>
+                      &nbsp;
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
